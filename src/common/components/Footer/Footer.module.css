@@ -1,0 +1,140 @@
+.mainContainer {
+  max-width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+  background-color: #000;
+  color: #fff;
+  font-family: "Inter", sans-serif;
+  padding: 2rem;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+.head {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.head h2 {
+  width: 8ch;
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.subSection1 p {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+}
+
+.subSection,
+.subSection div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.subSection a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.subSection5 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerLink {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  padding-bottom: 0;
+}
+
+.footerLink a,
+.footerLink p {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  font-size: 9px;
+  text-align: center;
+}
+
+.socialIcons {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .mainContainer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subSection1 {
+    width: 15rem;
+    margin-top: 2rem;
+  }
+
+  .subSection1 p {
+    font-weight: 300;
+    font-size: 11px;
+    line-height: 1.5;
+  }
+
+  .subSection {
+    width: 10rem;
+    gap: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .subSection5 h3 {
+    display: none;
+  }
+
+  .subSection5 {
+    margin-top: 4.5rem;
+    margin-right: 2rem;
+  }
+
+  .socialIcons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .iconDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .footerLink {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+  }
+}

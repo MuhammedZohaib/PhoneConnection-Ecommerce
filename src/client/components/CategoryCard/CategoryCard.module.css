@@ -1,0 +1,96 @@
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(1rem, 1.3rem, 5rem);
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+.mainCard {
+  position: relative;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  width: 8rem;
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80px;
+  position: relative;
+  transition: transform 0.3s;
+  border-radius: 30px;
+  background-color: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.25);
+}
+.card:hover {
+  transform: scale(1.1);
+}
+.circleBackground {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+  z-index: -1;
+}
+#c1 {
+  background-color: #db5c5c;
+}
+#c2 {
+  background-color: rgb(159, 204, 166);
+}
+#c3 {
+  background-color: rgba(238, 90, 44, 0.4);
+}
+#c4 {
+  background-color: rgba(146, 61, 255, 0.4);
+}
+.typo {
+  font-family: "Inter", sans-serif;
+  position: absolute;
+  bottom: 12px;
+  font-size: 14px;
+}
+#card1 {
+  background-image: url("../../../assets/Home/Icons/Computers.svg");
+}
+#card1:hover {
+  background-image: url("../../../assets/Home/Icons/ComputersRed.svg");
+}
+#card2 {
+  background-image: url("../../../assets/Home/Icons/Accessories.svg");
+}
+#card2:hover {
+  background-image: url("../../../assets/Home/Icons/AccessoriesRed.svg");
+}
+#card3 {
+  background-image: url("../../../assets/Home/Icons/Gaming.svg");
+}
+#card3:hover {
+  background-image: url("../../../assets/Home/Icons/GamingRed.svg");
+}
+#card4 {
+  background-image: url("../../../assets/Home/Icons/mobiles.svg");
+}
+#card4:hover {
+  background-image: url("../../../assets/Home/Icons/mobilesRed.svg");
+}
+@media (min-width: 768px) {
+  .main {
+    justify-content: space-evenly;
+    padding: 3rem 1rem;
+  }
+  .circleBackground {
+    width: 8.5rem;
+    height: 8.5rem;
+    left: -2rem;
+    top: -1.5rem;
+  }
+}

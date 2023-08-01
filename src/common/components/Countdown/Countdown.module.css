@@ -1,0 +1,21 @@
+.Main {
+  width: 300px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  font-family: "Inter", sans-serif;
+}
+.subdiv {
+  width: 5rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 2px;
+  color: #fff;
+  text-align: center;
+}
+.subdiv p {
+  font-weight: bold;
+  font-size: 1rem;
+}

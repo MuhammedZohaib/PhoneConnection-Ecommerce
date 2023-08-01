@@ -1,0 +1,83 @@
+.mainContainer {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  overflow-x: hidden;
+  border-bottom: 2px solid rgb(200, 158, 255);
+}
+.TypoContainer {
+  width: 70%;
+  max-width: 800px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.heading {
+  width: 15ch;
+  font-size: clamp(2rem, 10%, 3rem);
+  margin-left: 2rem;
+  margin-top: 3rem;
+  font-family: "Inter", sans-serif;
+}
+.typo {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  width: 25ch;
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+  font-size: clamp(14.5px, 1rem, 2.5rem);
+  line-height: 1.3;
+}
+.callToAction {
+  width: 8rem;
+  height: 2rem;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  background-color: #000000;
+  margin-top: 1rem;
+  margin-left: 2rem;
+  font-family: "Inter", sans-serif;
+}
+.imageContainer {
+  max-width: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  right: -12%;
+}
+.image {
+  max-width: 100%;
+}
+@media (min-width: 767px) {
+  .mainContainer {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .TypoContainer {
+    margin-top: 3rem;
+    margin-left: 1rem;
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 2.2rem;
+    line-height: 1;
+  }
+  .typo {
+    width: 40ch;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  .image {
+    width: clamp(50rem, 65rem, 100vw);
+    height: 81vh;
+    object-fit: cover;
+    top: 0;
+  }
+}

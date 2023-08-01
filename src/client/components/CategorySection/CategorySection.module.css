@@ -1,0 +1,25 @@
+.heading {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 4rem 0;
+  font-family: "Inter", sans-serif;
+}
+.heading h2 {
+  padding-left: 2rem;
+}
+.text {
+  padding-left: 2rem;
+  margin-top: 2rem;
+  font-weight: 300;
+  font-size: 14px;
+}
+@media (min-width: 767px) {
+  .typo {
+    margin-left: 2rem;
+  }
+}
