@@ -4,7 +4,7 @@ import CSS from "./CategoryCard.module.css";
 const CategoryCard = () => {
   return (
     <div className={CSS.main}>
-      <Link to={""} style={{ textDecoration: "none", color: "#000" }}>
+      <Link to={"/"} style={{ textDecoration: "none", color: "#000" }}>
         <div className={CSS.mainCard}>
           <div className={CSS.card} id={CSS.card4}>
             <p className={CSS.typo}>Mobile</p>

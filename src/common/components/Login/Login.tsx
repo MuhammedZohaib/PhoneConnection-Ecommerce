@@ -58,7 +58,7 @@ const Login = () => {
   return (
     <div className={CSS.mainContainer}>
       <div className={CSS.backToHome}>
-        <Link to={"/home"}>
+        <Link to={"/"}>
           <img src={logo} width={"30px"} height={"30px"} alt=""></img>
         </Link>
       </div>
